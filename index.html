@@ -3,69 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IDMX 225 Midterm</title>
-
-    <!-- Link in your CSS here -->
+    <title>Bisham Code: Web Developer Portfolio</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     
-<header>
-    <h1>Title</h1>
-    <section id="hero">
-        <!-- Make a spiffy hero here -->
-   </section>
-</header>
-<main>
-    
-    <!-- List of Projects -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <img src="" alt="">
-            <div class="description">
-                <h3></h3>
-            </div>
-        </div>
-        <div class="project">
-            <img src="" alt="">
-            <div class="description">
-                <h3></h3>
-            </div>
-        </div>
-        <div class="project">
-            <img src="" alt="">
-            <div class="description">
-                <h3></h3>
-            </div>
-        </div>
-    </section>
-    
-    <!-- List of Reviews -->
-    <section id="reviews">
-        <h2>Reviews</h2>
-        <div class="review">
-            <div class="name"></div>
-            <div class="title"></div>
-            <div class="rating"></div>
-            <div class="content"></div>
-        </div>
-        <div class="review">
-            <div class="name"></div>
-            <div class="title"></div>
-            <div class="rating"></div>
-            <div class="content"></div>
-        </div>
-        <div class="review">
-            <div class="name"></div>
-            <div class="title"></div>
-            <div class="rating"></div>
-            <div class="content"></div>
-        </div>
-    </section>
+<header class="site-header">
+    <div class="container">
+        <h1>Bishamcode69-max</h1>
+        
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+            </ul>
+        </nav>
+        
+    </div>
 
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h2>I build high-performance web applications with clean code.</h2>
+                <p>Leveraging modern stacks like React, Node.js, and your favorite frameworks to deliver seamless digital experiences.</p>
+                <a href="#" class="cta-button">Download Resume</a>
+            </div>
+            <div class="hero-image-container">
+                <img src="img/profile.jpg" alt="Professional profile picture or tech illustration" class="hero-image">
+            </div>
+        </div>
+    </section>
+</header>
+
+<main>
+    <div class="container">
+        
+        <section id="projects" class="section-padding">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                
+                <div class="project">
+                    <img src="img/project-ecom.png" alt="Mockup of an E-Commerce Platform" class="project-image">
+                    <div class="description">
+                        <h3>Full-Stack E-Commerce Platform</h3>
+                        <p>Developed a secure, scalable platform from scratch, featuring user authentication, product management, and integrated payment processing.</p>
+                        <a href="#" class="project-link">View Case Study &rarr;</a>
+                    </div>
+                </div>
+                
+                <div class="project">
+                    <img src="img/project-saas.png" alt="Mockup of a SaaS Data Dashboard" class="project-image">
+                    <div class="description">
+                        <h3>Real-Time SaaS Data Dashboard</h3>
+                        <p>Built a responsive dashboard leveraging third-party APIs for real-time data visualization, focusing on performance and an intuitive user experience.</p>
+                        <a href="#" class="project-link">View Case Study &rarr;</a>
+                    </div>
+                </div>
+                
+                <div class="project">
+                    <img src="img/project-brand.png" alt="Mockup of a Personal Brand Website" class="project-image">
+                    <div class="description">
+                        <h3>Custom Personal Brand Website</h3>
+                        <p>Designed and optimized a lightweight site for maximum performance and unique aesthetic, resulting in a 95+ PageSpeed score.</p>
+                        <a href="#" class="project-link">View Case Study &rarr;</a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
+        <hr class="section-divider">
+        
+        <section id="reviews" class="section-padding">
+            <h2>Client Testimonials</h2>
+            <div class="reviews-grid">
+                
+                <div class="review card">
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <div class="content">"Bisham was highly professional and delivered the project ahead of schedule, exceeding our expectations."</div>
+                    <div class="name">Ronaj Pradhan</div>
+                    <div class="title">CEO of TechStart</div>
+                </div>
+                
+                <div class="review card">
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <div class="content">"A creative problem-solver with excellent communication. He made complex issues feel simple."</div>
+                    <div class="name">Nirnaya Shrestha</div>
+                    <div class="title">Marketing Director</div>
+                </div>
+                
+                <div class="review card">
+                    <div class="rating">⭐⭐⭐⭐</div>
+                    <div class="content">"Seamless collaboration. The codebase was incredibly clean and easy for our design team to integrate with."</div>
+                    <div class="name">Atharba Acharya</div>
+                    <div class="title">Freelance Designer</div>
+                </div>
+                
+            </div>
+        </section>
+        
+        <section id="contact-section" class="section-padding">
+            <h2>Get In Touch</h2>
+            <p>I am currently available for freelance work and new opportunities. Send me an email or connect with me on social media!</p>
+            </section>
+        
+    </div>
 </main>
-<footer>
-    &copy; 2024 Your Name Here
+
+<footer class="site-footer">
+    <div class="container">
+        <p>Connect with me:</p>
+        <div class="social-links">
+             <a href="https://github.com/bishamcode69-max">GitHub</a> | <a href="bisham.khanal2016@gmail.com">Email</a>
+        </div>
+        <p>&copy; 2025 Bisham Code. All rights reserved.</p>
+    </div>
 </footer>
 
 </body>
